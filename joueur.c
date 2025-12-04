@@ -3,16 +3,16 @@
 #include <string.h>
 
 //focntion creerJoueur
-Joueur creerJoueur(Joueur joueurs[],int *nb){
+void creerJoueur(Joueur joueurs[],int *nb){
     Joueur j;
     //saisie des donnees du joueurs
     printf("saisir le pseudo:");
-    scanf("%c",j.pseudo);
+    scanf("%s",j.pseudo);
     //ajout du joueur dans le tableau joueurs[]
     j.scoreTotal=0;
     joueurs[*nb]=j;
     (*nb)++; //changement de la taille du tableau
-    return j;
+    printf("Joueur creé !");
 }
 
 //focntion afficherJoueur
@@ -37,3 +37,4 @@ void supprimerJoueur(Joueur joueur,Joueur joueurs[], int *nb){
         }
     }
 }
+
