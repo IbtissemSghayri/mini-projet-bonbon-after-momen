@@ -17,7 +17,7 @@ void creerJoueur(Joueur joueurs[],int *nb){
 
 //focntion afficherJoueur
 void afficherJoueur(Joueur joueur){
-    printf("Ton pseudo est : %s\n son score total est : %d", joueur.pseudo ,joueur.scoreTotal);
+    printf("Ton pseudo : %s\n ton score total est : %d\n", joueur.pseudo ,joueur.scoreTotal);
 }
 
 //focntion modifierJoueur
@@ -37,4 +37,5 @@ void supprimerJoueur(Joueur joueur,Joueur joueurs[], int *nb){
         }
     }
 }
+
 
