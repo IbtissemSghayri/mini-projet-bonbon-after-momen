@@ -16,29 +16,20 @@
 // fl jeu aana 3 distributeurs juste tefhemha akther mbaad fl jeu
 void creerDistributeur(Distributeur tab_dis[],int* nb_dis) {
     Distributeur d;
-    printf("Saisir l'identifiant du distributeur: ");
+    printf("Saisir l'identifiant du distributeur :");
     scanf("%d", &d.id);
     d.nb_bonbons_actuel=0;
     tab_dis[*nb_dis]=d;
     (*nb_dis)++;
-    printf("Distributeur cree avec succes!\n");
+    printf("Distributeur créé avec succès!\n");
 }
-
-
-
-
-
-
-
-
-
 
 
 void ajouterBonbon(Distributeur *d) {
     if(d->nb_bonbons_actuel>=100) {
         printf("Reserve pleine!\n"); // test si l distributeur m3ebi wla lee (100 hia maximum ili yhezou distributeur)
 
-        return;        // return; hia instruction tkharjek ml fonction kemla staamlnha lena bch nokhrejou ken nal9awhech
+        return;        // return; hia instruction tkharjek ml fonction kemla staamlnha lena bch nokhrejou ML FONCTION ken nal9awhech
     }
     // kenou fih blasa nzidou bonbon
     Bonbon b;
@@ -162,3 +153,4 @@ void afficherDistributeur(Distributeur d){
 
 }
 */
+
